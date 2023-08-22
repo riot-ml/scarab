@@ -1,0 +1,4 @@
+(library
+ (name criterion)
+ (public_name criterion))
+

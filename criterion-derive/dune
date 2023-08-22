@@ -1,0 +1,8 @@
+(library
+ (name criterion_derive)
+ (public_name criterion_derive)
+ (preprocess
+  (pps ppxlib.metaquot))
+ (kind ppx_rewriter)
+ (libraries criterion ppxlib))
+
