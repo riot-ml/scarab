@@ -1,0 +1,7 @@
+(library
+ (package criterion_derive)
+ (name test)
+ (modules test)
+ (preprocess
+  (pps criterion_derive))
+ (libraries criterion))

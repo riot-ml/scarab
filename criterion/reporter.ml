@@ -13,7 +13,8 @@ let cli : t =
         let start_time = Hashtbl.find start_times name in
         let ( - ) = Int64.sub in
         let elapsed_time =
-          end_time - start_time |> Int64.to_int |> Time.of_nanos |> Time.to_human_friendly
+          end_time - start_time |> Int64.to_int |> Time.of_nanos
+          |> Time.to_human_friendly
         in
         let rate =
           let t0 = Int64.to_float start_time in
@@ -22,6 +23,6 @@ let cli : t =
           mx /. (t1 -. t0)
         in
 
-        Printf.printf "%-20s[elapsed_time: %s; rate: %6.2f ops/ns]\n%!"
-          name elapsed_time rate);
+        Printf.printf "%-20s[elapsed_time: %s; rate: %6.2f ops/ns]\n%!" name
+          elapsed_time rate);
   }
