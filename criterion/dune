@@ -1,4 +1,10 @@
 (library
  (name criterion)
- (public_name criterion))
+ (public_name criterion)
+ (modules runner suite bench reporter time)
+ (libraries unix))
 
+(executable
+ (name test)
+ (modules test)
+ (libraries criterion))

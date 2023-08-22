@@ -22,6 +22,7 @@
    (dune (>= "3.5"))
    (ocamlformat (>= "0.17.0"))
    (ppx_inline_test (>= "0.16.0"))
+   (time_now (>= "0.16.0"))
    ))
 
 (package
