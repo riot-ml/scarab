@@ -34,7 +34,7 @@
    (dune (>= "3.5"))
    (ppxlib (>= "0.28.0"))
    (ppx_deriving (>= "5.2.1"))
-   (criterion (= "0.0.1"))
+   (criterion :version)
    ))
 
 (package
@@ -45,5 +45,6 @@
    (ocaml (>= "4.12.0"))
    (dune (>= "3.5"))
    (ppxlib (>= "0.28.0"))
+   (criterion :version)
    (ppx_deriving (>= "5.2.1"))
    ))
