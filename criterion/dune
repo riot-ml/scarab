@@ -1,7 +1,7 @@
 (library
  (name criterion)
  (public_name criterion)
- (modules runner suite bench reporter time)
+ (modules runner suite bench measure reporter time)
  (libraries unix))
 
 (executable

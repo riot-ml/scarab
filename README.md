@@ -4,7 +4,7 @@ A microbenchmarking framework for OCaml heavily inspired by [criterion-rs](https
 
 The main goals for `criterion.ml` are:
 
-* **Ease-of-use** - setting up and running new benchmarks should be as easy as tagging a function with `[%%bench]` and running `dune-bench`
+* **Ease-of-use** - setting up and running new benchmarks should be as easy as tagging a function with `let%bench` and running `dune-bench`
 
 > NOTE: this is _super not ready_ for production yet, and I'm only making it to support development of [`serde.ml`](https://github.com/leostera/serde.ml)
 
