@@ -1,5 +1,7 @@
 # scarab
 
+<img src="./test/demo.gif" />
+
 A microbenchmarking framework for Riot inspired by Elixir's [benchee][benchee]
 and Rust's [criterion-rs][criterion].
 
