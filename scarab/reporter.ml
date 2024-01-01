@@ -176,8 +176,8 @@ module Minttea_reporter = struct
         let benches =
           List.map
             (fun b ->
-              if b.id = id
-              then { b with measures = Some { slowest; fastest; median } }
+              if b.id = id then
+                { b with measures = Some { slowest; fastest; median } }
               else b)
             model.benches
         in

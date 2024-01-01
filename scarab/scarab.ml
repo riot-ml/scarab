@@ -2,7 +2,7 @@ open Riot
 module Reporter = Reporter
 
 let run reporter ~name:_ benches () =
-  let Reporter.(R((module R), _)) = reporter in
+  let Reporter.(R ((module R), _)) = reporter in
   let reporter = Process.await_name R.name in
   let tui = Process.await_name "Minttea.runner" in
   Logger.trace (fun f -> f "Scarab.run");
@@ -14,7 +14,7 @@ let run reporter ~name:_ benches () =
   in
   wait_pids tasks;
   Reporter.shutdown ();
-  wait_pids [reporter;tui];
+  wait_pids [ reporter; tui ];
   sleep 1.;
   shutdown ()
 

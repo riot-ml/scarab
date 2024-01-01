@@ -1,4 +1,5 @@
 (lang dune 3.10)
+(using mdx 0.4)
 
 (name scarab)
 
@@ -19,6 +20,9 @@
  (description "")
  (depends
    (ocaml (>= "5.1.1"))
+   (riot (>= "0.0.8"))
+   (minttea (>= "0.0.2"))
+   (mdx (and :with-test (>= "2.3.1")))
    dune
-   (ocamlformat (>= "0.17.0"))
-   ))
+   )
+ (tags (microbenchmark benchmark bench riot multicore tui minttea)))
