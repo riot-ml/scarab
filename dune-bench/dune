@@ -1,3 +1,0 @@
-(executable
- (package dune_bench)
- (public_name dune_bench))

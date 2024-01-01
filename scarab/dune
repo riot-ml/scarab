@@ -1,0 +1,4 @@
+(library
+ (name scarab)
+ (public_name scarab)
+ (libraries riot leaves minttea))
